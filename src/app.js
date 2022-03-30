@@ -11,5 +11,15 @@ container.forEach(element => element.addEventListener('click', (evt) => {
     addDiv(evt.currentTarget.outerHTML)
 }))
 
-// 
+// delete
+
+const btn = document.querySelector('button')
+
+function delContainer(){
+    while (copy.firstChild) {
+        copy.removeChild(copy.firstChild);
+      }
+}
+
+btn.addEventListener('click', delContainer)
 
